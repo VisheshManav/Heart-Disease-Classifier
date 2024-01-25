@@ -6,7 +6,7 @@ model_file = 'model_lr.bin'
 with open(model_file, 'rb') as f_in:
     dv, model = pickle.load(f_in)
 
-app = Flask('heartD')
+app = Flask('heartd')
 
 @app.route('/')
 def home_form():
