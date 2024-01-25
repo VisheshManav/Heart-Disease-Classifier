@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Classifier</title>
+</head>
+
+<body style="background-color:rgb(89, 117, 212);">
+    <h1 style="text-align:center">Heart Disease Classifier</h1>
+    <a href="https://github.com/VisheshManav/Heart_Disease_Classifier">
+        <p style="text-align:center">Link to the Github repo.</p>
+    </a>
+    <div style="text-align:center;">
+        <form method="POST">
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="0" max="120" id="age" placeholder = 20>
+            <br>
+            <label for="sex">Sex:</label>
+            <select name="sex" id="sex">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <br>
+            <label for="cp">Chest pain:</label>
+            <select name="cp" id="cp">
+                <option value="typical_angina">typical_angina</option>
+                <option value="atypical_angina">atypical_angina</option>
+                <option value="non_anginal_pain">non_anginal_pain</option>
+                <option value="asymtomatic">asymtomatic</option>
+            </select>
+            <br>
+            <label for="trestbps">Resting Blood Pressure:</label>
+            <input type="number" name="trestbps" id="trestbps">
+            <br>
+            <label for="chol">Serum Cholestoral:</label>
+            <input type="number" name="chol" id="chol">
+            <br>
+            <label for="fbs">Fasting Blood Sugar > 120 mg/dl</label>
+            <select name="fbs" id="fbs">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+            <br>
+            <label for="restecg">Resting electrocardiographic results:</label>
+            <select name="restecg" id="restecg">
+                <option value="normal">normal</option>
+                <option value="st-t_wave_abnormality">st-t_wave_abnormality</option>
+                <option value="left_ventricular_hypertrophy">left_ventricular_hypertrophy</option>
+            </select>
+            <br>
+            <label for="thalach">Maximum Heart Rate Achieved:</label>
+            <input type="number" name="thalach" id="thalach">
+            <br>
+            <label for="exang">Exercise induced angina:</label>
+            <select name="exang" id="exang">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+            <br>
+            <label for="oldpeak">ST depression induced by exercise relative to rest</label>
+            <input type="number" name="oldpeak" id="oldpeak" step="any">
+            <br>
+            <label for="slope">The slope of the peak exercise ST segment:</label>
+            <select name="slope" id="slope">
+                <option value="upsloping">upsloping</option>
+                <option value="flat">flat</option>
+                <option value="downsloping">downsloping</option>
+            </select>
+            <br>
+            <label for="ca">Number of major vessels (0-3) colored by flourosopy:</label>
+            <select name="ca" id="ca">
+                <option value="zero">zero</option>
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+            </select>
+            <br>
+            <label for="thal">thal: {normal, fixed defect, reversable defect}</label>
+            <select name="thal" id="thal">
+                <option value="normal">normal</option>
+                <option value="fixed_defect">fixed_defect</option>
+                <option value="reversable_defect">reversable_defect</option>
+            </select>
+            <br>
+            <input type="submit" value="Send" />
+        </form>
+    </div>
+</body>
+
+</html>
